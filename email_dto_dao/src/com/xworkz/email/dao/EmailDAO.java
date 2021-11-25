@@ -68,7 +68,8 @@ public class EmailDAO {
 			if(test!=null)
 			{
 
-				System.out.println(String.valueOf(test.getStorageSize()).concat(" ").concat(String.valueOf(test.getFree())).concat(" ").concat(String.valueOf(test.getNoOfEmailPerDay())).concat(" ").concat(test.getEmailId()));
+				System.out.println(String.valueOf(test.getStorageSize()).concat(" ").concat(String.valueOf(test.getFree())).concat(" ").
+						concat(String.valueOf(test.getNoOfEmailPerDay())).concat(" ").concat(test.getEmailId()));
 			}
 
 		}
