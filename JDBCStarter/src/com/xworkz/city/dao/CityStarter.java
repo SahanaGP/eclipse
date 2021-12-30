@@ -14,7 +14,6 @@ public class CityStarter {
 		CityDTO dto4=new CityDTO(5,"Srirangapatna",0.025f,"Doll");
 		
 		
-		
 		CityDAO dao=new CityDAO();
 		dao.save(dto);
 		dao.save(dto1);
@@ -24,8 +23,17 @@ public class CityStarter {
 		
 		
 		CityDAO dao1=new CityDAO();
-        dao1.deleteById(3);
+        dao1.deleteOperation(3);
 		
+        
+        CityDAO dao2=new CityDAO();
+        dao2.readOperationById(4);
+        
+        CityDAO dao3=new CityDAO();
+        dao3.displayAll();
+        
+        CityDAO dao4=new CityDAO();
+		dao4.displayTotalRows();
 	}
 
 }

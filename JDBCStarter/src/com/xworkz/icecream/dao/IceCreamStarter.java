@@ -22,7 +22,16 @@ public class IceCreamStarter {
 		
 		
 		IceCreamDAO dao1=new IceCreamDAO();
-        dao1.deleteById(4);
+        dao1.deleteOperation(4);
+        
+        IceCreamDAO dao2=new IceCreamDAO();
+        dao2.readOperationById(2);
+        
+        IceCreamDAO dao3=new IceCreamDAO();
+        dao3.displayAll();
+        
+        IceCreamDAO dao4=new IceCreamDAO();
+        dao4.displayTotalRows();
 		
 	}
 

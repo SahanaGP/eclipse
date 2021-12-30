@@ -14,7 +14,7 @@ public class FestivalStarter {
      FestivalDTO dto4=new FestivalDTO(5,"Ugadi",10,"Karnataka");
      FestivalDTO dto5=new FestivalDTO(6,"Lohri",12,"Punjab");
 		
-     FestivalDAO dao=new FestivalDAO();
+        FestivalDAO dao=new FestivalDAO();
 		dao.save(dto);
 		dao.save(dto1);
 		dao.save(dto2);
@@ -23,10 +23,16 @@ public class FestivalStarter {
 		dao.save(dto5);
 		
 		FestivalDAO dao1=new FestivalDAO();
-       dao1.deleteById(1);
+        dao1.deleteById(1);
        
-       
+        FestivalDAO dao2=new FestivalDAO();
+        dao2.readOperationById(6);
 		
+        FestivalDAO dao3=new FestivalDAO();
+        dao3.displayAll();
+        
+        FestivalDAO dao4=new FestivalDAO();
+        dao4.displayTotalRows();
 	}
 
 	}

@@ -13,7 +13,6 @@ public class CountryStarter {
 		CountryDTO dto3=new CountryDTO(4,"Nigeria",234,"Africa");
 		CountryDTO dto4=new CountryDTO(5,"Brazil",55,"South America");
 		
-				
 		CountryDAO dao=new CountryDAO();
 		dao.save(dto);
 		dao.save(dto1);
@@ -23,7 +22,17 @@ public class CountryStarter {
 		
 		
 		CountryDAO dao1=new CountryDAO();
-        dao1.deleteById(4);
+        dao1.deleteOperation(4);
+        		
+	   CountryDAO dao2=new CountryDAO();
+       dao2.readOperationById(3);
+        
+        CountryDAO dao3=new CountryDAO();
+        dao3.displayAll();
+        
+        CountryDAO dao4=new CountryDAO();
+        dao4.displayTotalRows();
+        
 		
 	}
 

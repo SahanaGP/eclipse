@@ -14,8 +14,6 @@ public class StateStarter {
 		StateDTO dto4=new StateDTO(5,"Goa",30,"Panaji");
 		
 		
-		
-		
         StateDAO dao=new StateDAO();
 		dao.save(dto);
 		dao.save(dto1);
@@ -26,6 +24,15 @@ public class StateStarter {
 		
 		StateDAO dao1=new StateDAO();
         dao1.deleteById(4);
+        
+        StateDAO dao2=new StateDAO();
+        dao2.readOperationById(2);
+        
+        StateDAO dao3=new StateDAO();
+        dao3.displayAll();
+        
+        StateDAO dao4=new StateDAO();
+        dao4.displayTotalRows();
 		
 	}
 
